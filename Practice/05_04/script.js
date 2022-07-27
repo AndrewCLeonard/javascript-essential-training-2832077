@@ -36,3 +36,6 @@ document.querySelector("h2").className = "test-one test-two";
 // console.log(document.querySelector("main img:last-child").attributes);
 console.log(document.querySelectorAll("body figure img"));
 console.log(document.querySelectorAll("figure")[1].firstElementChild.src);
+
+// changing style properties isn't working for me using 
+console.log(document.querySelector(".maincontent").style)
