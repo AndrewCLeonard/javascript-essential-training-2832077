@@ -19,12 +19,20 @@
 document.querySelectorAll("main li").forEach((item) => (item.style.color = "red"));
 document.querySelectorAll("main li:last-child").forEach((item) => (item.style.color = "blue"));
 
+// console.log(document.querySelector("main li:nth-child(3)").innerText);
+
 // MODIFYING ELEMENT CLASSES
 
-// don't use this in frameworks:
+// don't use this, it doesn't work in frameworks:
 document.querySelector("h1").className = "test-one test-two";
 
-// instead use .classList
-console.log(document.querySelector("h1").classList);
-
+// instead use .classList, it has methods for add, remove, and toggle
 document.querySelector("h1").classList.remove("test-one", "test-two");
+
+// modify element class
+document.querySelector("h2").className = "test-one test-two";
+
+// attributes property
+// console.log(document.querySelector("main img:last-child").attributes);
+console.log(document.querySelectorAll("body figure img"));
+console.log(document.querySelectorAll("figure")[1].firstElementChild.src);
