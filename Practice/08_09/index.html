@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice: Pass values between functions</title>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <main></main>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Practice: Pass values between functions</title>
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<div style="display: flex">
+				<div>
+					<h1 class="backpack__name">${backpackObject.name}</h1>
+					<ul class="backpack__features">
+						<li class="packprop backpack__volume">Volume:<span> ${backpackObject.volume} liters</span></li>
+						<li class="packprop backpack__color">Color:<span> ${backpackObject.color}</span></li>
+						<li class="packprop backpack__pockets">Number of pockets:<span> ${backpackObject.pocketNum}</span></li>
+						<li class="packprop backpack__strap">Left strap length:<span> ${backpackObject.strapLength.left} inches</span></li>
+						<li class="packprop backpack__strap">Right strap length:<span> ${backpackObject.strapLength.right} inches</span></li>
+						<li class="feature backpack__lid">Lid status:<span> ${backpackObject.lidOpen ? "open" : "closed"}</span></li>
+					</ul>
+				</div>
+				<figure>
+					<img src="../../assets/images/frog.svg" alt="" srcset="" width="100%" max-width="auto" height="300px" />
+					<figcaption style="text-align: center">name</figcaption>
+				</figure>
+			</div>
+			<hr />
+		</main>
+	</body>
 </html>

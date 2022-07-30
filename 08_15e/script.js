@@ -10,14 +10,18 @@ let stuffList = document.createElement("ul");
 
 // map() through the stuff array to make a new stuffItems array.
 const stuffItems = stuff.map((item) => {
-  let listItem = document.createElement("li");
-  listItem.innerHTML = item;
-  return listItem;
+	let listItem = document.createElement("li");
+	listItem.innerHTML = item;
+	return listItem;
 });
+
+console.log(stuff);
+
+console.log(stuffItems);
 
 // Append each element from the stuffItems array to the stuffList <ul>
 stuffItems.forEach((item) => {
-  stuffList.append(item);
+	stuffList.append(item);
 });
 
 // Append stuffList to the <article>
