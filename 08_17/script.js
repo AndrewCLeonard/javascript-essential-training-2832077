@@ -6,11 +6,9 @@
  * - Append each backpack object to the <main> element.
  */
 import backpackObjectArray from "./components/data.js";
-console.log(backpackObjectArray);
 // Map throught the array and make a new array
 const content = backpackObjectArray.map((backpack) => {
 	// "backpack" now holds a single backpack object
-	console.log(backpack);
 
 	// Create new article
 	let backpackArticle = document.createElement("article");
